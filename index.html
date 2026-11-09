@@ -85,11 +85,6 @@ section { padding: 85px 9%; }
 .hero-content {
   flex: 1;
   min-width: 280px;
-    background-image: url('Futuristic QA Tech Portfolio Header.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
 }
 
 .eyebrow {
@@ -98,7 +93,12 @@ section { padding: 85px 9%; }
   font-size: 18px;
   font-weight: 700;
 }
-
+  .hero {
+ background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 .hero h1 {
   font-size: clamp(38px, 6vw, 64px);
   line-height: 1.15;
@@ -726,7 +726,6 @@ photoUpload.addEventListener("change", function(event) {
   if (file && file.type.startsWith("image/")) {
 
     const reader = new FileReader();
-
     reader.onload = function(e) {
       profilePreview.src = e.target.result;
     };
