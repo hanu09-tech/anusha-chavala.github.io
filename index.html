@@ -1,1 +1,742 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Anusha Chavala | QA Automation Engineer</title>
+
+<meta name="description" content="Anusha Chavala's professional portfolio in QA Automation, API Testing and Performance Engineering.">
+
+<style>
+:root {
+  --bg: #0b1120;
+  --surface: #131f33;
+  --surface2: #1a2941;
+  --blue: #60a5fa;
+  --cyan: #38bdf8;
+  --white: #f1f5f9;
+  --muted: #a5b4c7;
+  --border: #293c57;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--white);
+  line-height: 1.7;
+}
+
+a { text-decoration: none; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  background: rgba(11,17,32,0.96);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.logo span { color: var(--blue); }
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23px;
+}
+
+.nav-links a {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.nav-links a:hover { color: var(--blue); }
+
+section { padding: 85px 9%; }
+
+.hero {
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 45px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.eyebrow {
+  color: var(--cyan);
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 6vw, 64px);
+  line-height: 1.15;
+  margin: 18px 0;
+}
+
+.hero h1 span { color: var(--blue); }
+
+.hero h2 {
+  font-size: 22px;
+  color: #d5e4f5;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: var(--muted);
+  max-width: 620px;
+}
+
+.buttons { margin-top: 30px; }
+
+.btn {
+  display: inline-block;
+  padding: 12px 23px;
+  background: var(--blue);
+  color: #07111f;
+  border-radius: 7px;
+  font-weight: 700;
+  margin: 5px 8px 5px 0;
+  transition: .2s;
+}
+
+.btn:hover { transform: translateY(-3px); }
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
+
+.photo-area {
+  text-align: center;
+}
+
+.profile {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--blue);
+  background: var(--surface);
+}
+
+.photo-area input {
+  display: block;
+  max-width: 250px;
+  margin: 15px auto;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.photo-area small { color: var(--muted); }
+
+h2.section-title {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.section-title span { color: var(--blue); }
+
+.intro {
+  color: var(--muted);
+  max-width: 800px;
+  margin-bottom: 35px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 25px;
+  border-radius: 12px;
+  transition: .25s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--blue);
+}
+
+.card h3 {
+  color: var(--blue);
+  margin-bottom: 13px;
+}
+
+.card p, .card li { color: var(--muted); }
+
+.card ul { padding-left: 20px; }
+
+.primary-card {
+  border-top: 3px solid var(--blue);
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+}
+
+.skills span {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: #c5e1ff;
+  font-size: 14px;
+}
+
+.project-link {
+  display: inline-block;
+  color: var(--cyan);
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.project-link:hover { color: white; }
+
+.experience-date {
+  font-size: 13px;
+  color: var(--cyan);
+  margin-bottom: 12px;
+}
+
+.analytics {
+  background: #101a2b;
+}
+
+.contact {
+  text-align: center;
+  background: #101a2b;
+}
+
+.contact p {
+  color: var(--muted);
+  margin: 15px auto 25px;
+  max-width: 600px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+}
+
+@media(max-width: 750px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 13px;
+  }
+
+  .hero {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-content { min-width: 100%; }
+
+  .hero p { margin: auto; }
+
+  section { padding: 60px 7%; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+  <div class="logo">ANUSHA<span>.</span></div>
+
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="eyebrow">
+      QUALITY ENGINEERING PROFESSIONAL
+    </div>
+
+    <h1>
+      Hello, I'm <span>Anusha Chavala</span>
+    </h1>
+
+    <h2>
+      QA Automation Engineer |
+      API Testing |
+      Performance Engineering
+    </h2>
+
+    <p>
+      Passionate about delivering quality software through
+      intelligent test automation, robust API validation
+      and performance engineering.
+
+      Experienced in building automation solutions,
+      investigating application issues, validating data
+      integrity and collaborating with cross-functional teams
+      to improve software reliability.
+    </p>
+
+    <div class="buttons">
+      <a href="#projects" class="btn">
+        Explore My Work
+      </a>
+
+      <a href="#contact" class="btn btn-outline">
+        Let's Connect
+      </a>
+    </div>
+
+  </div>
+
+  <!-- PROFILE PHOTO -->
+
+  <div class="photo-area">
+
+    <img
+      id="profilePreview"
+      class="profile"
+      src="profile.jpg"
+      alt="Anusha Chavala">
+
+    <input
+      type="file"
+      id="photoUpload"
+      accept="image/*">
+
+    <small>Upload your profile picture</small>
+
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+  <h2 class="section-title">
+    About <span>Me</span>
+  </h2>
+
+  <p class="intro">
+    I am a Quality Engineering professional with 7 years
+    of overall IT experience across SaaS applications,
+    digital events, payment gateways, health insurance
+    and retail-related workflows.
+
+    My experience includes test automation, API testing,
+    performance testing, production issue investigation
+    and data validation.
+
+    I enjoy identifying issues, understanding application
+    behaviour, analysing performance bottlenecks and
+    contributing to reliable software releases.
+
+    Alongside my QA experience, I am expanding my
+    knowledge of SQL, Python and Power BI.
+  </p>
+
+</section>
+
+<!-- QA SKILLS -->
+
+<section id="skills">
+
+  <h2 class="section-title">
+    Technical <span>Expertise</span>
+  </h2>
+
+  <p class="intro">
+    My primary technical focus is Quality Assurance,
+    Test Automation, API Testing and Performance Engineering.
+  </p>
+
+  <div class="grid">
+
+    <div class="card primary-card">
+      <h3>01. Test Automation</h3>
+      <div class="skills">
+        <span>Selenium</span>
+        <span>Java</span>
+        <span>Playwright</span>
+        <span>TypeScript</span>
+        <span>NightwatchJS</span>
+        <span>Cucumber BDD</span>
+        <span>Page Object Model</span>
+      </div>
+    </div>
+
+    <div class="card primary-card">
+      <h3>02. API Testing</h3>
+      <div class="skills">
+        <span>Postman</span>
+        <span>REST Assured</span>
+        <span>Java</span>
+        <span>API Validation</span>
+        <span>JSON</span>
+      </div>
+    </div>
+
+    <div class="card primary-card">
+      <h3>03. Performance Testing</h3>
+      <div class="skills">
+        <span>JMeter</span>
+        <span>BlazeMeter</span>
+        <span>Load Testing</span>
+        <span>Stress Testing</span>
+        <span>Throughput Analysis</span>
+        <span>Performance Monitoring</span>
+      </div>
+    </div>
+
+    <div class="card primary-card">
+      <h3>04. CI/CD & Collaboration</h3>
+      <div class="skills">
+        <span>GitLab CI/CD</span>
+        <span>Jenkins</span>
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>Confluence</span>
+        <span>Jira</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+
+  <h2 class="section-title">
+    Professional <span>Experience</span>
+  </h2>
+
+  <p class="intro">
+    Experience across enterprise applications and
+    different business domains.
+  </p>
+
+  <div class="grid">
+
+    <div class="card primary-card">
+
+      <h3>Cochlear | Turing Consulting</h3>
+
+      <div class="experience-date">
+        April 2025 – January 2026
+      </div>
+
+      <p><b>QA Automation & Performance Engineering</b></p>
+
+      <ul>
+        <li>Salesforce Health Cloud application testing</li>
+        <li>Test planning and regression automation</li>
+        <li>Data integrity and discrepancy validation</li>
+        <li>SOQL-based duplicate record investigation</li>
+        <li>JMeter and BlazeMeter performance testing</li>
+        <li>NightwatchJS and Cucumber BDD automation</li>
+        <li>GitLab CI/CD integration and collaboration</li>
+      </ul>
+
+    </div>
+
+    <div class="card">
+
+      <h3>Capgemini</h3>
+
+      <p><b>Quality Engineering</b></p>
+
+      <p>
+        Experience across health insurance and
+        payment gateway applications.
+      </p>
+
+      <ul>
+        <li>Application quality assurance</li>
+        <li>Production issue investigation</li>
+        <li>Root cause analysis</li>
+        <li>Application and log analysis</li>
+        <li>Functional and regression validation</li>
+      </ul>
+
+    </div>
+
+    <div class="card">
+
+      <h3>Infosys</h3>
+
+      <p><b>Software Testing</b></p>
+
+      <p>
+        Digital events application domain.
+      </p>
+
+      <ul>
+        <li>Application testing and validation</li>
+        <li>Quality assurance activities</li>
+        <li>Defect investigation and reporting</li>
+        <li>Cross-functional collaboration</li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- QA PROJECTS -->
+
+<section id="projects">
+
+  <h2 class="section-title">
+    Featured <span>Projects</span>
+  </h2>
+
+  <p class="intro">
+    Practical work and learning across automation,
+    API testing and performance engineering.
+  </p>
+
+  <div class="grid">
+
+    <div class="card primary-card">
+
+      <h3>Salesforce Health Cloud Testing</h3>
+
+      <p>
+        Enterprise application testing involving
+        automation, regression validation, data
+        integrity checks and performance testing.
+      </p>
+
+      <a href="#" class="project-link">
+        Add Project Details →
+      </a>
+
+    </div>
+
+    <div class="card primary-card">
+
+      <h3>UI Automation Framework</h3>
+
+      <p>
+        Browser automation using Java, Selenium,
+        NightwatchJS, Playwright and Cucumber BDD.
+        Focus on reusable test components and
+        maintainable automation.
+      </p>
+
+      <a href="#" class="project-link">
+        Add GitHub Repository →
+      </a>
+
+    </div>
+
+    <div class="card primary-card">
+
+      <h3>API Automation Testing</h3>
+
+      <p>
+        API testing and validation using Postman
+        and REST Assured, including response
+        validation and JSON data checks.
+      </p>
+
+      <a href="#" class="project-link">
+        Add GitHub Repository →
+      </a>
+
+    </div>
+
+    <div class="card primary-card">
+
+      <h3>Performance Testing – JMeter</h3>
+
+      <p>
+        Performance testing using JMeter and
+        BlazeMeter, including load simulation,
+        throughput analysis and response-time
+        investigation.
+      </p>
+
+      <a href="#" class="project-link">
+        Add Project Details →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ADDITIONAL DATA ANALYTICS -->
+
+<section id="analytics" class="analytics">
+
+  <h2 class="section-title">
+    Additional <span>Skills</span>
+  </h2>
+
+  <p class="intro">
+    Expanding my technical capabilities through
+    data analytics and business intelligence.
+  </p>
+
+  <div class="grid">
+
+    <div class="card">
+
+      <h3>Data Analytics</h3>
+
+      <div class="skills">
+        <span>SQL</span>
+        <span>Python</span>
+        <span>Pandas</span>
+        <span>Excel</span>
+        <span>Power BI</span>
+        <span>DAX</span>
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>StreamMODE – Power BI</h3>
+
+      <p>
+        A financial and subscription analytics project
+        exploring customer movement, subscription
+        revenue, operating costs and business insights.
+      </p>
+
+      <a href="#" class="project-link">
+        Add Power BI Dashboard →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+  <h2 class="section-title">
+    Let's <span>Connect</span>
+  </h2>
+
+  <p>
+    Open to opportunities in QA Automation,
+    API Testing and Performance Engineering
+    across Sydney, Australia.
+  </p>
+
+  <a
+    href="https://www.linkedin.com/"
+    target="_blank"
+    class="btn">
+    LinkedIn
+  </a>
+
+  <a
+    href="https://github.com/hanu09-tech"
+    target="_blank"
+    class="btn btn-outline">
+    GitHub
+  </a>
+
+  <a
+    href="mailto:YOUR_EMAIL@example.com"
+    class="btn btn-outline">
+    Email Me
+  </a>
+
+</section>
+
+<footer>
+  © 2026 Anusha Chavala | QA Automation & Performance Engineering
+</footer>
+
+<!-- PROFILE PHOTO PREVIEW -->
+
+<script>
+
+const photoUpload = document.getElementById("photoUpload");
+const profilePreview = document.getElementById("profilePreview");
+
+photoUpload.addEventListener("change", function(event) {
+
+  const file = event.target.files[0];
+
+  if (file && file.type.startsWith("image/")) {
+
+    const reader = new FileReader();
+
+    reader.onload = function(e) {
+      profilePreview.src = e.target.result;
+    };
+
+    reader.readAsDataURL(file);
+
+  }
+
+});
+
+</script>
+
+</body>
+</html>
